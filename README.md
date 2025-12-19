@@ -43,12 +43,12 @@ The final XGBoost pipeline is used in a prediction script that reads a one-row E
 ## Folder Structure
 
 FINAL_PROJECT
-│
-├── Code/ (main notebook and scripts)
-├── Input_Data/ (CSV files for sentiment and stock data)
-├── Models/ (saved models and preprocessing files)
-├── Template/ (Excel template for single predictions)
-└── requirements.txt
+
+Code/ (main notebook and scripts)
+Input_Data/ (CSV files for sentiment and stock data)
+Models/ (saved models and preprocessing files)
+Template/ (Excel template for single predictions)
+requirements.txt
 
 ##How to Run
 
