@@ -6,9 +6,9 @@ This project looks at whether news sentiment can help predict short-term stock p
 
 The project goes through the full data science process: collecting data, cleaning it, creating features, training models, evaluating performance, and finally making predictions on new data through an Excel input template.
 
-Overview
+## Overview
 
-Data Collection
+### Data Collection
 
 News headlines were pulled from Google News RSS feeds using feedparser.
 
@@ -18,7 +18,7 @@ The results were summarized daily and saved to CSV files.
 
 Historical price data was downloaded from Yahoo Finance using yfinance.
 
-Feature Engineering
+### Feature Engineering
 
 Technical indicators include moving averages, RSI, MACD, Bollinger bands, and volatility.
 
@@ -26,7 +26,7 @@ Sentiment features include average polarity, rolling sentiment, ratios, and z-sc
 
 These were merged into one dataset per stock.
 
-Modeling
+### Modeling
 
 Built models to predict if the stock would go up or down over the next 3 days.
 
@@ -34,13 +34,13 @@ Compared Logistic Regression, Random Forest, and XGBoost.
 
 XGBoost performed best based on ROC-AUC and accuracy.
 
-Saving and Prediction
+### Saving and Prediction
 
 Models, scalers, and imputers are saved in the Models folder with joblib.
 
 The final XGBoost pipeline is used in a prediction script that reads a one-row Excel file and prints a predicted direction and probability.
 
-Folder Structure
+## Folder Structure
 
 FINAL_PROJECT
 │
@@ -50,7 +50,7 @@ FINAL_PROJECT
 ├── Template/ (Excel template for single predictions)
 └── requirements.txt
 
-How to Run
+##How to Run
 
 Clone or download the project.
 
@@ -61,10 +61,10 @@ Open the notebook in the Code folder and run all cells in order. Depending on yo
 
 To test a prediction, open Template/prediction_template.xlsx, fill in one row with feature values, and run the final prediction cell in the notebook.
 
-Results
+##Results
 
 Sentiment data improved performance slightly, especially during volatile periods.
 
-Notes
+##Notes
 
 You can easily adapt it for other tickers by changing the stock symbol at the top of the notebook.
